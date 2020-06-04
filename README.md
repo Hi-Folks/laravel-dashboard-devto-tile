@@ -52,6 +52,14 @@ In config/dashboard.php please, add:
     ],
 ```
 
+In order to retrieve articles from DEV.to automatically, you need to schedule your command.
+Go to Kernel.php file and add this line.
+
+```php
+$schedule->command("dashboard:fetch-data-from-devto-api", [])->everyFiveMinutes();
+```
+
+
 ## Testing
 
 ``` bash
