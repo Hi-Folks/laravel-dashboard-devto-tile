@@ -59,6 +59,9 @@ Go to Kernel.php file and add this line.
 $schedule->command("dashboard:fetch-data-from-devto-api", [])->everyFiveMinutes();
 ```
 
+## The tile
+If you completed the setup correctly you could see in your dashboard your new tile.
+![Screenshot of the Tile with DEV.to articles](screenshot-tile.png)
 
 ## Testing
 
